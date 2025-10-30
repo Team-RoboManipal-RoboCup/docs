@@ -1,0 +1,39 @@
+# Sphinx build directory
+_build/
+build/
+
+# Sphinx cache files
+.doctrees
+.sphinx/
+.sphinx-build
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS / Editor / IDE junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# Python virtual environment
+venv/
+.env/
+.ropeproject/
+.idea/
+.vscode/
+*.egg-info/
+.eggs/
+
+# Distribution / packaging
+dist/
+*.egg
+MANIFEST
+
+# Jupyter / notebooks cache (if you include any)
+.ipynb_checkpoints/
