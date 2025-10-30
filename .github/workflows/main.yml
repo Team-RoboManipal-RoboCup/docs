@@ -1,36 +1,29 @@
-name: Build and Deploy Sphinx Docs
-
+name: docs_pages_workflow
+ 
+# execute this workflow automatically when a we push to master
 on:
   push:
-    branches: [ main ]   # Automatically runs when you push to 'main'
-
-permissions:
-  contents: write        # Required to push to gh-pages
-
-
+    branches: [ master ]
+ 
 jobs:
-  build:
+ 
+  build_docs_job:
     runs-on: ubuntu-latest
-
+    container: debian:buster-slim
+ 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
-      - name: Install dependencies
-        run: |
-          pip install sphinx sphinx_rtd_theme myst-parser
-
-      - name: Build HTML
-        run: make html
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/html
-
+ 
+    - name: Prereqs
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        apt-get update
+        apt-get install -y git
+        git clone --depth 1 "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" .
+      shell: bash
+ 
+    - name: Execute script to build our documentation and update pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: "docs/buildDocs.sh"
+      shell: bash
