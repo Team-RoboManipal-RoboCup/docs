@@ -12,9 +12,9 @@ sys.path.insert(0, os.path.abspath('..'))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'RoboManipal'
+project = 'RoboManipal - RoboCup SML 2026'
 copyright = '2025, RoboManipal'
-author = 'kamal2730'
+author = 'Team RobomManipal'
 release = '0.1'
 
 # -- General configuration ---------------------------------------------------

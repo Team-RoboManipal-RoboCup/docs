@@ -37,3 +37,6 @@ MANIFEST
 
 # Jupyter / notebooks cache (if you include any)
 .ipynb_checkpoints/
+
+
+notes.txt

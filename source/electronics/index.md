@@ -1,11 +1,8 @@
 # Electronics
 
-This section covers all Electronics topics.
-
-
 ```{toctree}
-:maxdepth: 1
-:caption: Topics
+:maxdepth: 2
 
-arm
-base
+base/index
+arm/index
+```

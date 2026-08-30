@@ -1,11 +1,10 @@
 # Coding
 
-This section covers all software, programming, and automation topics.
-
 ```{toctree}
-:maxdepth: 1
-:caption: Topics
+:maxdepth: 2
 
-navigation
-perception
-moveit
+perception/index
+pick_and_place/index
+navigation/index
+global_planner/index
+```
