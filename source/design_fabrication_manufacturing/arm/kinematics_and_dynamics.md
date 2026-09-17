@@ -1,1 +1,0 @@
-# Kinematics and Dynamics Calculation

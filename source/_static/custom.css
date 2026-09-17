@@ -1,0 +1,78 @@
+/* ==========================================================================
+   RoboManipal SML Documentation — Custom RTD Theme Styles
+   ========================================================================== */
+
+/* 1. Eliminate the awkward blank gray space on wide screens */
+.wy-nav-content-wrap {
+    background: #ffffff !important;
+}
+
+.wy-nav-content {
+    max-width: 1250px !important;
+    background: #ffffff !important;
+    padding: 1.5rem 2.5rem !important;
+}
+
+/* 2. Responsive Card Enhancements (sphinx-design) */
+.sd-card {
+    border-radius: 8px !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    background: #ffffff !important;
+}
+
+.sd-card:hover {
+    border-color: #2980b9 !important;
+    box-shadow: 0 8px 20px -4px rgba(41, 128, 185, 0.15) !important;
+    transform: translateY(-3px) !important;
+}
+
+.sd-card-title {
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: #2c3e50 !important;
+    margin-bottom: 0.35rem !important;
+}
+
+.sd-card-header {
+    border-bottom: 1px solid #f1f5f9 !important;
+    background: #f8fafc !important;
+    font-weight: 600 !important;
+}
+
+/* 3. Inline Badges / Tags */
+.sd-badge {
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    padding: 3px 8px !important;
+    border-radius: 6px !important;
+    margin-right: 4px !important;
+    margin-bottom: 4px !important;
+    display: inline-block !important;
+    letter-spacing: 0.02em !important;
+}
+
+/* 4. Mermaid Diagram Styling */
+.mermaid {
+    text-align: center;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+}
+
+.mermaid svg {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* 5. Clean Admonitions */
+.admonition {
+    border-radius: 6px !important;
+    border-left-width: 4px !important;
+}
+
+/* 6. Typography & Tables */
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal !important;
+}
