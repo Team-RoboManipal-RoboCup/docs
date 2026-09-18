@@ -1,42 +1,93 @@
-# Sphinx build directory
+# ==========================================
+# Sphinx Build & Output Directories
+# ==========================================
 _build/
 build/
-
-# Sphinx cache files
-.doctrees
+.doctrees/
 .sphinx/
-.sphinx-build
+.sphinx-build/
 
-# Byte-compiled / cache files
+# ==========================================
+# Environment Variables, Secrets & Keys
+# (CRITICAL FOR PUBLIC REPOSITORIES)
+# ==========================================
+.env
+.env.*
+*.env
+*.local
+*.key
+*.pem
+*.pfx
+*.p12
+*.pkcs12
+*.crt
+*.cer
+*.pub
+*token*
+*secret*
+credentials.json
+client_secret*.json
+service_account*.json
+id_rsa*
+id_ed25519*
+
+# ==========================================
+# Python Bytecode, Caches & Packaging
+# ==========================================
 __pycache__/
 *.py[cod]
 *$py.class
-
-# OS / Editor / IDE junk
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-*.bak
-*.tmp
-*.log
-
-# Python virtual environment
-venv/
-.env/
-.ropeproject/
-.idea/
-.vscode/
 *.egg-info/
 .eggs/
-
-# Distribution / packaging
 dist/
 *.egg
 MANIFEST
 
-# Jupyter / notebooks cache (if you include any)
-.ipynb_checkpoints/
+# ==========================================
+# Virtual Environments
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
 
-# Extras
+# ==========================================
+# IDE, Editor & OS Metadata
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+ehthumbs_vista.db
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.log
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.ropeproject/
+
+# ==========================================
+# Temporary, Scratch & Raw Dump Directories
+# ==========================================
+scratch/
+temp/
+tmp/
 documenting_assets/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ==========================================
+# Node / Web Tooling (if applicable)
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
